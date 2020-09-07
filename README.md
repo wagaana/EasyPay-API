@@ -11,7 +11,7 @@
 ### Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.wagaana:EasyPay-API:0.01'
+	        implementation 'com.github.wagaana:EasyPay-API:0.02'
 	}
 	
 ### usage
