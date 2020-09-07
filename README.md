@@ -18,17 +18,15 @@
 
 #### Onclick listener call the code below
 
-
 	new Request(MainActivity.this)
                                 .setAmountToPay("500")
                                 .setCurrency("UGX")
                                 .setPaymentReason("some reason")
-                                .setClientSecret("28b5c11ff5402dd7")
-                                .setClientID("41238e5ca57bcc17")
+                                .setClientSecret("your secret")
+                                .setClientID("your client id")
                                 .initialize();
                             
 ### Add the function below to your code
-
 
 	@Override
         public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
