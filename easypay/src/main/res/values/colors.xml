@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="material_cyan50">#ffe0f7fa</color>
+    <color name="material_cyan100">#ffb2ebf2</color>
+    <color name="material_cyan200">#ff80deea</color>
+    <color name="material_cyan300">#ff4dd0e1</color>
+    <color name="material_cyan400">#ff26c6da</color>
+    <color name="material_cyan500">#ff00bcd4</color>
+    <color name="material_cyan600">#ff00acc1</color>
+    <color name="material_cyan700">#ff0097a7</color>
+    <color name="material_cyan800">#ff00838f</color>
+    <color name="material_cyan900">#ff006064</color>
+    <color name="material_cyanA700">#ff00b8d4</color>
+</resources>
