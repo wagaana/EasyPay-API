@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
                             .setAmountToPay("500")
                             .setCurrency("UGX")
                             .setPaymentReason("some reason")
-                            .setClientSecret("28b5c11ff5402dd7")
-                            .setClientID("41238e5ca57bcc17")
+                            .setClientSecret("your secret")
+                            .setClientID("your client id")
                             .initialize();
                 }catch (Exception e){
                     Toast.makeText(MainActivity.this, "Make sure you enable your device location", Toast.LENGTH_SHORT).show();
@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == EP_REQUEST_CODE && resultCode == RESULT_OK) {
-            Toast.makeText(this, "EP_REQUEST_CODE", Toast.LENGTH_SHORT).show();
+            String stringResponse = data.getStringExtra("response");
+            Toast.makeText(this, stringResponse, Toast.LENGTH_SHORT).show();
         }
     }
 }

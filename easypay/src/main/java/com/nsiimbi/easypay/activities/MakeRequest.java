@@ -73,6 +73,7 @@ public class MakeRequest extends AppCompatActivity {
 
                 if (pay) {
                     progressBar.setVisibility(View.VISIBLE);
+                    transactionResponse.setVisibility(View.GONE);
                     CallAPI callAPI = new CallAPI(transaction_amount, transaction_phone, MakeRequest.this);
                     callAPI.execute();
                 }
@@ -147,11 +148,6 @@ public class MakeRequest extends AppCompatActivity {
                                 progressBar.setVisibility(View.GONE);
                                 transactionResponse.setVisibility(View.VISIBLE);
                                 transactionResponse.setText(js.get("errormsg").toString());
-
-                                Intent intent = new Intent();
-                                intent.putExtra("response", js.get("errormsg").toString());
-                                setResult(Activity.RESULT_OK, intent);
-                                finish();
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }

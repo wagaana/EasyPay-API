@@ -32,7 +32,8 @@
         public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
             super.onActivityResult(requestCode, resultCode, data);
             if (requestCode == EP_REQUEST_CODE && resultCode == RESULT_OK) {
-                Toast.makeText(this, "EP_REQUEST_CODE", Toast.LENGTH_SHORT).show();
+                String stringResponse = data.getStringExtra("response");
+                Toast.makeText(this, stringResponse, Toast.LENGTH_SHORT).show();
             }
         }
 
